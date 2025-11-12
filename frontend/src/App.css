@@ -1,0 +1,157 @@
+:root {
+  font-family: system-ui, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffd600;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.game-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+
+  position: relative;
+}
+
+.win-overlay,
+.loading-overlay,
+.error-message,
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.win-overlay {
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px; /* Спадкує від 'main' */
+}
+.win-message {
+  background-color: #2d2d2d;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 2px solid #ffd600;
+}
+.win-message h2 {
+  color: #ffd600;
+  margin-top: 0;
+}
+.win-message p {
+  color: #f4f4f4;
+  margin-top: 0;
+}
+.win-message button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #ffd600;
+  color: #2d2d2d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.win-message button:hover {
+  background-color: #ffd600;
+}
+
+.loading-overlay {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #888;
+  z-index: 5;
+}
+.error-message {
+  font-size: 1.2em;
+  color: #d9534f;
+  font-weight: bold;
+}
+.placeholder {
+  color: #777;
+}
+
+.notification-bar {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.notification-bar.error {
+  background-color: #fdf2f2;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+}
+.notification-bar.success {
+  background-color: #f0f9f0;
+  color: #ffd600;
+  border: 1px solid #ffd600;
+}
+.notification-close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.notification-bar.error .notification-close-btn {
+  color: #d9534f;
+}
+.notification-bar.success .notification-close-btn {
+  color: #ffd600;
+}
+.notification-close-btn:hover {
+  opacity: 1;
+}

@@ -1,0 +1,111 @@
+.controls-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.select {
+  color: #2d2d2d;
+}
+.control-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #2d2d2d;
+}
+
+/* --- Стилі для кнопок та полів вводу --- */
+.controls-container button,
+.controls-container select,
+.controls-container input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.controls-container button {
+  background-color: #ffd600;
+  color: #2d2d2d;
+  border-color: #f4f4f4;
+  transition: background-color 0.2s;
+}
+
+.controls-container button:hover:not(:disabled) {
+  background-color: #ffd500e7;
+}
+
+.controls-container button:disabled {
+  background-color: #2d2d2d;
+  color: #f4f4f4;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.controls-container .report-btn {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.controls-container .report-btn:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.controls-container .delete-btn {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.controls-container .delete-btn:hover:not(:disabled) {
+  background-color: #c9302c;
+}
+
+/* --- Стилі для меню Завантаження та Збереження --- */
+
+.controls-container .load-input,
+.controls-container .load-select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2d2d2d;
+}
+
+.controls-container .load-select {
+  min-width: 200px;
+}
+
+.controls-container .load-input {
+  width: 150px;
+  color: #2d2d2d;
+}
+
+/* Контейнер меню Завантаження */
+.controls-container.is-load-menu {
+  border: 2px dashed #ffd600;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+  flex-direction: column;
+}
+
+/* Контейнер меню Збереження */
+.controls-container.is-save-menu {
+  border: 2px dashed #ffd600;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+  flex-direction: column;
+}
+
+/* Текст помилки валідації назви */
+.validation-error {
+  color: #d9534f;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
