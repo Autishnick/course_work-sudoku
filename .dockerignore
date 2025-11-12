@@ -1,0 +1,26 @@
+# .dockerignore
+
+# Ігнорувати Git
+.git
+.gitignore
+
+# Ігнорувати налаштування VSCode
+.vscode
+
+# ❗️ Найголовніше:
+# Не копіювати локальні C++ збірки.
+# Docker має створити свої власні з нуля.
+cpp_core/build
+
+# Не копіювати локальне Python-середовище
+backend/venv
+backend/cpp_module
+backend/*.db*
+
+# Не копіювати кеш Python
+__pycache__
+backend/__pycache__
+backend/app/__pycache__
+
+# Не копіювати локальні модулі Node.js (Vercel збирає їх сам)
+frontend/node_modules
