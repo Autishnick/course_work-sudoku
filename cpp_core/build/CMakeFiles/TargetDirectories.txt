@@ -1,0 +1,3 @@
+/Users/admin/univercity/course/cpp_core/build/CMakeFiles/sudoku_solver.dir
+/Users/admin/univercity/course/cpp_core/build/CMakeFiles/edit_cache.dir
+/Users/admin/univercity/course/cpp_core/build/CMakeFiles/rebuild_cache.dir

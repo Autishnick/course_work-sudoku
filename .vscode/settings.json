@@ -1,0 +1,6 @@
+{
+	"python.analysis.extraPaths": [
+		"./backend/cpp_module"
+		// або "./backend", якщо ви поклали .so файл туди
+	]
+}

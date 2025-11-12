@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+fpdf2
+pybind11
