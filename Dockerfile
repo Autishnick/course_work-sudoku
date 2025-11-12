@@ -37,4 +37,4 @@ COPY backend /app/backend
 
 # 8. Запускаємо сервер
 WORKDIR /app/backend
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
