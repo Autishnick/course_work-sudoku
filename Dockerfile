@@ -10,6 +10,8 @@ FROM python:3.14-slim
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
+    python3-dev \
+    pybind11-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # 3. Встановлюємо Python-залежності (включаючи pybind11)
