@@ -396,6 +396,8 @@ _Python_INCLUDE_DIR:INTERNAL=/opt/homebrew/opt/python@3.14/Frameworks/Python.fra
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;0;64;;cpython-314-darwin;abi3;/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/lib/python3.14;/Users/admin/univercity/course/backend/venv/lib/python3.14;/Users/admin/univercity/course/backend/venv/lib/python3.14/site-packages;/Users/admin/univercity/course/backend/venv/lib/python3.14/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=32368b6bfc352b2aead1a213f813b9e2
+//Interpreter reason failure
+_Python_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python_LIBRARY_RELEASE:INTERNAL=/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/lib/libpython3.14.dylib
 //NumPy reason failure
